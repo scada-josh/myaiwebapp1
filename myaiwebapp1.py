@@ -4,7 +4,7 @@ import google.generativeai as genai
 genai.configure(api_key=st.secrets["genai_key"])
 model = genai.GenerativeModel("gemini-pro")
 
-st.title("แปลภาษา")
+st.title("แปลภาษา จ๊ะ")
 ch = st.selectbox("เลือกภาษาปลายทาง",
                  ("ไทย","อังกฤษ","เกาหลี","ญี่ปุ่น"))
 
