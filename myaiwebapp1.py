@@ -1,7 +1,7 @@
 import streamlit as st
 
 import google.generativeai as genai
-genai.configure(api_key="AIzaSyAUtRCl_0NH3L7LPd97WPAUYdW6iSs4LLU")
+genai.configure(api_key=st.secrets["genai_key"])
 model = genai.GenerativeModel("gemini-pro")
 
 st.title("แปลภาษา")
